@@ -1,0 +1,34 @@
+{
+  "name": "authentication-node-mongo",
+  "version": "1.0.0",
+  "description": "Authentication Admin/Users API with mongoDB and Node.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenjaminDexant/authentication-node-mongo.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "mongoose",
+    "jwt",
+    "rest",
+    "api"
+  ],
+  "author": "Benjamin DEXANT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenjaminDexant/authentication-node-mongo/issues"
+  },
+  "homepage": "https://github.com/BenjaminDexant/authentication-node-mongo#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.9"
+  }
+}

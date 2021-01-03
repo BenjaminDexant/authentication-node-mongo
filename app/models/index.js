@@ -7,6 +7,7 @@ const db = {};
 
 db.mongoose = mongoose;
 
+// alias naming
 db.user = require("./user.model");
 db.role = require("./role.model");
 

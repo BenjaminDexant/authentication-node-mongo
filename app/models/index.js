@@ -1,5 +1,5 @@
 // mongoose provides a modeling environment for data (CRUD is provided by mongoose)
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 
 // init the db

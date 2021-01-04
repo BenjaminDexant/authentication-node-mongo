@@ -5,7 +5,9 @@ const bodyParser = require("body-parser");
 // cors provides Express middleware to enable CORS with various options
 const cors = require("cors");
 // import db
-const db = require("./app/models/index");
+const db = require("./app/models");
+// import database config
+const dbConfig = require("./app/config/db.config");
 
 // create the express app
 const app = express();
@@ -24,14 +26,14 @@ app.use(bodyParser.json());
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// simple test route
+// simple test route TO DELETE IN CASE OF REAL USE
 app.get("/", (req, res) => {
 	res.json({ message: "My first simple route test." });
 });
 
 // routes
-require('./app/routes/auth.routes')(app);
-require('./app/routes/user.routes')(app);
+require("./app/routes/auth.routes")(app);
+require("./app/routes/user.routes")(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
